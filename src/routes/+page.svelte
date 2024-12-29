@@ -104,4 +104,34 @@
     .project-name:hover {
         text-decoration: underline;
     }
+
+    /* Responsive adjustments for narrow screens */
+    @media (max-width: 600px) {
+        body {
+            font-size: 14px; /* Smaller text for better fit */
+        }
+
+        .about-me, 
+        .projects {
+            flex-direction: column; /* Stack content */
+            align-items: center; /* Center everything */
+            text-align: center; /* Center-align text */
+        }
+
+        .about-logo,
+        .project-logo {
+            float: none; /* Disable floating */
+            margin: 0 auto 10px auto; /* Center the images */
+            max-width: 100%; /* Ensure they fit the container */
+        }
+
+        main {
+            padding: 10px; /* Add some breathing space */
+            width: 100%; /* Utilize full screen width */
+        }
+
+        h1.main-heading {
+            font-size: 1.8rem; /* Slightly smaller heading */
+        }
+    }
 </style>

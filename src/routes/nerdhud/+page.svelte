@@ -26,7 +26,6 @@
     }
 
     .feature-list li {
-        display: list-item;
         margin-bottom: 11px;
         margin-left: 11px;
         font-size: 80%;
@@ -43,17 +42,70 @@
     /* Style for the logo image */
     .logo {
         float: right;
-        margin: 22px; /* Margin to the right to create space between the image and text */
-        max-width: 300px; /* Ensure the image doesn't take too much space */
-        height: auto; /* Maintain aspect ratio */
+        margin: 22px;
+        max-width: 300px;
+        height: auto;
     }
 
     .yt-div {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%; /* Ensure the div takes up the full width */
-        margin: 0 auto; /* Center the div horizontally if it has a fixed width */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Responsive adjustments for narrow screens */
+    @media (max-width: 600px) {
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .page-content {
+            padding: 10px;
+            width: 100%;
+        }
+
+        h1, h2 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .features img,
+        .about-panel img {
+            float: none;
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 100%;
+        }
+
+        .yt-div {
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        .features, .about-panel {
+            text-align: center;
+        }
+
+        .about-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-panel img {
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 200px;
+        }
     }
 </style>
 
@@ -72,6 +124,7 @@
     <li><strong>Mobile support:</strong> Whether you want to play on your desktop PC or your mobile phone, Nerd HUD Next adjusts to your screen.</li>
     <li><strong>Cloud Save:</strong> Sync your data for cross-device play.</li>
 </ul>
+
 <p class="cta">Streamline your adventure—play smarter with NerdHUD Next!</p>
 
 <div class="yt-div">    
@@ -79,6 +132,7 @@
 </div>
 
 <h1 class="main-heading">Download and Installation</h1>
+
 <div class="install-instructions">
     <div class="button-container">
         <a href="#" class="download-btn" download>Download Nerd HUD Next</a>
@@ -86,7 +140,7 @@
 
     <style>
     .button-container {
-        text-align: center; /* Horizontally center content inside */
+        text-align: center;
     }
 
     .download-btn {
@@ -130,7 +184,7 @@
       <li>Tap <strong>Load unpacked</strong> and select the <code>NerdHUDNext.zip</code> file.</li>
       <li>The extension will install automatically.</li>
     </ol>
-  </div>
+</div>
 
 <section class="about-section">
     <div class="about-content">
@@ -159,11 +213,11 @@
         .about-logo {
             width: 120px;
             height: auto;
-            margin-right: 20px; /* Add margin for spacing between the logo and the text */
+            margin-right: 20px;
         }
 
         .about-text {
-            flex: 1; /* Allow the text to take the remaining space */
+            flex: 1;
         }
 
         .about-section h2 {
@@ -203,11 +257,25 @@
         .source-code a:hover {
             text-decoration: underline;
         }
-        </style>
-      
 
+        /* Responsive adjustments for narrow screens */
+        @media (max-width: 600px) {
+            .about-content {
+                flex-direction: column; /* Stack the content vertically on narrow screens */
+                text-align: center; /* Center-align the text for better readability */
+            }
+
+            .about-logo {
+                margin-right: 0; /* Remove the margin on the right */
+                margin-bottom: 15px; /* Add margin below the logo to separate it from the text */
+                width: 150px; /* Scale the logo slightly larger if needed */
+            }
+
+            .about-text {
+                text-align: center; /* Center-align the text */
+            }
+        }
+    </style>
 </section>
 
 <a href="{base}/">Back to overview</a>
-  
- 
