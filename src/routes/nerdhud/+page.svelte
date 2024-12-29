@@ -135,7 +135,7 @@
 
 <div class="install-instructions">
     <div class="button-container">
-        <a href="#" class="download-btn" download>Download Nerd HUD Next</a>
+        <a href="{base}/NerdHUDNext.zip" class="download-btn" download>Download Nerd HUD Next</a>
     </div>
 
     <style>
