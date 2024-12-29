@@ -8,7 +8,7 @@ const config = {
             fallback: null
         }),
         paths: {
-            base: '/mnemonicware' // Replace with your repository name for GitHub Pages
+            base: '' // Replace with your repository name for GitHub Pages
         }
     }
 };
